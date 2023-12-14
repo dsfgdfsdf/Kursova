@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="CssFile/registrationPage.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+</head>
+<body>
+<div>
+    <h2>Registration</h2>
+    <form action="/registration" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a th:href="@{/login}">Log in</a></p>
+</div>
+
+<!-- Новогоднее оформление -->
+<div class="holiday-decoration"></div>
+</body>
+</html>

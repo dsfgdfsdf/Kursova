@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link href="CssFile/AdminPage.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+
+
+</head>
+<body>
+
+<div>
+    <h2>Admin Panel</h2>
+    <ul>
+        <li>User 1</li>
+        <li>User 2</li>
+        <!-- Здесь можно добавить динамическое отображение списка пользователей из базы данных -->
+    </ul>
+    <p><a th:href="@{/logout}">Log Out</a></p>
+</div>
+
+<!-- Новогоднее оформление -->
+<div class="holiday-decoration"></div>
+
+</body>
+</html>

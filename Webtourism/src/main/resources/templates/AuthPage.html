@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link href="CssFile/AuthPage.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Authorithation Page</title>
+</head>
+<body>
+
+<div>
+    <h2>Authorization</h2>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">To come in</button>
+    </form>
+</div>
+
+<div>
+    <p>Don't have an account yet? <a th:href="@{/registration}">Register!</a></p>
+</div>
+<div class="holiday-decoration"></div>
+
+</body>
+</html>
